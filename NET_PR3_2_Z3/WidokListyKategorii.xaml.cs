@@ -37,5 +37,10 @@ namespace NET_PR3_2_Z3
                     .Show()
                     ; 
 		}
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
 	}
 }

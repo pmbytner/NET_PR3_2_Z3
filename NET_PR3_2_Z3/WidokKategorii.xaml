@@ -9,7 +9,7 @@
         
     Title="{Binding XPath=nazwa}"
     Height="450"
-    Width="600"
+    Width="500"
     FontSize="24"
     >
     <Grid DataContext="{Binding}">
@@ -30,10 +30,6 @@
                 <DataGridTextColumn
                     Header="Kraj pochodzenia"
                     Binding="{Binding XPath=kraj_pochodzenia}"
-                    />
-                <DataGridTextColumn
-                    Header="Kategoria"
-                    Binding="{Binding XPath=../../nazwa}"
                     />
             </DataGrid.Columns>
         </DataGrid>
