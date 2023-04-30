@@ -12,7 +12,27 @@
     Width="600"
     FontSize="24"
     >
-    <Grid>
+    <Grid DataContext="{Binding Source={StaticResource Produkty}}">
+        <DataGrid
+            ItemsSource="{Binding XPath=produkt@Owoce}"
+            AutoGenerateColumns="False"
+            >
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Header="Nazwa produktu"
+                    Binding="{Binding XPath=nazwa}"
+                    />
+                <DataGridTextColumn
+                    Header="Cena"
+                    Binding="{Binding XPath=cena}"
+                    MinWidth="60"
+                    />
+                <DataGridTextColumn
+                    Header="Kraj pochodzenia"
+                    Binding="{Binding XPath=kraj_pochodzenia}"
+                    />
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </Window>
