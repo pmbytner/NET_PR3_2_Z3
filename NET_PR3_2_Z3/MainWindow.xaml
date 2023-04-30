@@ -14,9 +14,15 @@
     >
     <Grid DataContext="{Binding Source={StaticResource Produkty}}">
         <DataGrid
-            ItemsSource="{Binding XPath=produkt@Owoce}"
             AutoGenerateColumns="False"
             >
+            <DataGrid.ItemsSource>
+                <Binding>
+                    <Binding.XPath>
+                        produkt[@kategoria='Owoce']
+                    </Binding.XPath>
+                </Binding>
+            </DataGrid.ItemsSource>
             <DataGrid.Columns>
                 <DataGridTextColumn
                     Header="Nazwa produktu"
