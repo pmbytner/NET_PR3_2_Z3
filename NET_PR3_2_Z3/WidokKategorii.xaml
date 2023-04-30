@@ -7,7 +7,7 @@
     xmlns:local="clr-namespace:NET_PR3_2_Z3"
     mc:Ignorable="d"
         
-    Title="MainWindow"
+    Title="{Binding XPath=nazwa}"
     Height="450"
     Width="600"
     FontSize="24"
@@ -33,7 +33,7 @@
                     />
                 <DataGridTextColumn
                     Header="Kategoria"
-                    Binding="{Binding XPath=@kategoria}"
+                    Binding="{Binding XPath=../../nazwa}"
                     />
             </DataGrid.Columns>
         </DataGrid>
