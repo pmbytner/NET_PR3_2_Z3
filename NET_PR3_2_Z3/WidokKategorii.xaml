@@ -13,26 +13,55 @@
     FontSize="24"
     >
     <Grid DataContext="{Binding}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Label>Nazwa kat.</Label>
+        <TextBox
+            Grid.Column="1"
+            Text="{Binding Nazwa}"
+            />
         <DataGrid
-            ItemsSource="{Binding XPath=produkty/produkt}"
+            Name="ListaProduktów"
+            Grid.ColumnSpan="2"
+            Grid.Row="1"
+            ItemsSource="{Binding Produkty}"
             AutoGenerateColumns="False"
             >
             <DataGrid.Columns>
                 <DataGridTextColumn
                     Header="Nazwa produktu"
-                    Binding="{Binding XPath=nazwa}"
+                    Binding="{Binding Nazwa}"
                     />
                 <DataGridTextColumn
                     Header="Cena"
-                    Binding="{Binding XPath=cena}"
+                    Binding="{Binding Cena}"
                     MinWidth="60"
                     />
                 <DataGridTextColumn
                     Header="Kraj pochodzenia"
-                    Binding="{Binding XPath=kraj_pochodzenia}"
+                    Binding="{Binding KrajPochodzenia}"
                     />
             </DataGrid.Columns>
         </DataGrid>
 
+        <Button
+            Grid.Row="2" Click="DodajProdukt"
+            >
+            Dodaj
+        </Button>
+        <Button
+            Grid.Column="1"
+            Grid.Row="2" Click="UsuńProdukty"
+            >
+            Usuń
+        </Button>
     </Grid>
 </Window>

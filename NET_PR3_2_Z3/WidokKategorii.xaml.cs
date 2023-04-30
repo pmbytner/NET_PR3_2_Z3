@@ -20,9 +20,22 @@ namespace NET_PR3_2_Z3;
 /// </summary>
 public partial class WidokKategorii : Window
 {
-	public WidokKategorii(XmlElement kategoria)
+	Kategoria Kategoria { get; set; }
+	DataGrid listaProduktów;
+	public WidokKategorii(Kategoria kategoria)
 	{
-		DataContext = kategoria;
+		DataContext = Kategoria = kategoria;
 		InitializeComponent();
+		listaProduktów = (DataGrid)FindName("ListaProduktów");
+	}
+
+	private void DodajProdukt(object sender, RoutedEventArgs e)
+	{
+		Kategoria.Produkty.Add(new());
+	}
+
+	private void UsuńProdukty(object sender, RoutedEventArgs e)
+	{
+
 	}
 }

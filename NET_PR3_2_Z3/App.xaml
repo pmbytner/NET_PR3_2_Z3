@@ -6,10 +6,5 @@
     StartupUri="WidokListyKategorii.xaml"
     >
     <Application.Resources>
-        <XmlDataProvider
-            x:Key="KategorieProduktów"
-            Source="Produkty.xml"
-            XPath="kategorie_produktów"
-            />
     </Application.Resources>
 </Application>
