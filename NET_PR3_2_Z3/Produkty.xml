@@ -1,48 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<produkty>
-  <produkt kategoria="Owoce">
-    <nazwa>Banan</nazwa>
-    <cena>3.50</cena>
-    <kraj_pochodzenia>Nigeria</kraj_pochodzenia>
-  </produkt>
-  <produkt kategoria="Owoce">
-    <nazwa>Pomidor</nazwa>
-    <cena>15.99</cena>
-    <kraj_pochodzenia>Polska</kraj_pochodzenia>
-  </produkt>
-  <produkt kategoria="Owoce">
-    <nazwa>Pomarańcza</nazwa>
-    <cena>8.99</cena>
-    <kraj_pochodzenia>Hiszpania</kraj_pochodzenia>
-  </produkt>
-  <produkt kategoria="Warzywa">
-    <nazwa>Awokado</nazwa>
-    <cena>11.99</cena>
-    <kraj_pochodzenia>Izrael</kraj_pochodzenia>
-  </produkt>
-  <produkt kategoria="Warzywa">
-    <nazwa>Marchew</nazwa>
-    <cena>3.99</cena>
-    <kraj_pochodzenia>Polska</kraj_pochodzenia>
-  </produkt>
-  <produkt kategoria="Warzywa">
-    <nazwa>Sałata</nazwa>
-    <cena>7.99</cena>
-    <kraj_pochodzenia>Holandia</kraj_pochodzenia>
-  </produkt>
-  <produkt kategoria="Bakalie">
-    <nazwa>Orzech Włoski</nazwa>
-    <cena>9.99</cena>
-    <kraj_pochodzenia>Polska</kraj_pochodzenia>
-  </produkt>
-  <produkt kategoria="Bakalie">
-    <nazwa>Szuszona Śliwka Węgierka</nazwa>
-    <cena>4.99</cena>
-    <kraj_pochodzenia>Polska</kraj_pochodzenia>
-  </produkt>
-  <produkt kategoria="Bakalie">
-    <nazwa>Rodzynki Sułtańskie</nazwa>
-    <cena>8.99</cena>
-    <kraj_pochodzenia>Turcja</kraj_pochodzenia>
-  </produkt>
-</produkty>
+<kategorie_produktów>
+  <kategoria>
+    <nazwa>Owoce</nazwa>
+    <produkty>
+      <produkt>
+        <nazwa>Banan</nazwa>
+        <cena>3.50</cena>
+        <kraj_pochodzenia>Nigeria</kraj_pochodzenia>
+      </produkt>
+      <produkt>
+        <nazwa>Pomidor</nazwa>
+        <cena>15.99</cena>
+        <kraj_pochodzenia>Polska</kraj_pochodzenia>
+      </produkt>
+      <produkt>
+        <nazwa>Pomarańcza</nazwa>
+        <cena>8.99</cena>
+        <kraj_pochodzenia>Hiszpania</kraj_pochodzenia>
+      </produkt>
+    </produkty>
+  </kategoria>
+  <kategoria>
+    <nazwa>Warzywa</nazwa>
+    <produkty>
+      <produkt>
+        <nazwa>Awokado</nazwa>
+        <cena>11.99</cena>
+        <kraj_pochodzenia>Izrael</kraj_pochodzenia>
+      </produkt>
+      <produkt>
+        <nazwa>Marchew</nazwa>
+        <cena>3.99</cena>
+        <kraj_pochodzenia>Polska</kraj_pochodzenia>
+      </produkt>
+      <produkt>
+        <nazwa>Sałata</nazwa>
+        <cena>7.99</cena>
+        <kraj_pochodzenia>Holandia</kraj_pochodzenia>
+      </produkt>
+    </produkty>
+  </kategoria>
+  <kategoria>
+    <nazwa>Bakalie</nazwa>
+    <produkty>
+      <produkt>
+        <nazwa>Orzech Włoski</nazwa>
+        <cena>9.99</cena>
+        <kraj_pochodzenia>Polska</kraj_pochodzenia>
+      </produkt>
+      <produkt>
+        <nazwa>Szuszona Śliwka Węgierka</nazwa>
+        <cena>4.99</cena>
+        <kraj_pochodzenia>Polska</kraj_pochodzenia>
+      </produkt>
+      <produkt>
+        <nazwa>Rodzynki Sułtańskie</nazwa>
+        <cena>8.99</cena>
+        <kraj_pochodzenia>Turcja</kraj_pochodzenia>
+      </produkt>
+    </produkty>
+  </kategoria>
+</kategorie_produktów>

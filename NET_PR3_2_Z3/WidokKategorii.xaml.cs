@@ -12,15 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace NET_PR3_2_Z3;
 /// <summary>
 /// Interaction logic for MainWindow.xaml
 /// </summary>
-public partial class MainWindow : Window
+public partial class WidokKategorii : Window
 {
-	public MainWindow()
+	public WidokKategorii(XmlElement kategoria)
 	{
+		DataContext = kategoria;
 		InitializeComponent();
 	}
 }

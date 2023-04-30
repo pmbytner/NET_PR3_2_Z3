@@ -1,5 +1,5 @@
 ﻿<Window
-    x:Class="NET_PR3_2_Z3.MainWindow"
+    x:Class="NET_PR3_2_Z3.WidokKategorii"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -12,17 +12,11 @@
     Width="600"
     FontSize="24"
     >
-    <Grid DataContext="{Binding Source={StaticResource Produkty}}">
+    <Grid DataContext="{Binding}">
         <DataGrid
+            ItemsSource="{Binding XPath=produkty/produkt}"
             AutoGenerateColumns="False"
             >
-            <DataGrid.ItemsSource>
-                <Binding>
-                    <Binding.XPath>
-                        produkt[@kategoria='Owoce']
-                    </Binding.XPath>
-                </Binding>
-            </DataGrid.ItemsSource>
             <DataGrid.Columns>
                 <DataGridTextColumn
                     Header="Nazwa produktu"
@@ -36,6 +30,10 @@
                 <DataGridTextColumn
                     Header="Kraj pochodzenia"
                     Binding="{Binding XPath=kraj_pochodzenia}"
+                    />
+                <DataGridTextColumn
+                    Header="Kategoria"
+                    Binding="{Binding XPath=@kategoria}"
                     />
             </DataGrid.Columns>
         </DataGrid>
